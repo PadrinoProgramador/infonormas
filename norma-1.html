@@ -7,39 +7,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        :root { --cfe-dark-green: #004d40; --cfe-mid-green: #00796b; --cfe-light-green: #e0f2f1; --cfe-accent-yellow: #ffc107; --text-dark: #333; --bg-light: #f4f7f9; --bg-white: #ffffff; }
-        body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: var(--text-dark ); background-color: var(--bg-light); margin: 0; padding: 0; }
-        .infographic-container { max-width: 1000px; margin: 0 auto; background-color: var(--bg-white); overflow: hidden; }
-        .header { padding: 25px 40px; display: flex; justify-content: space-between; align-items: center; }
-        .header img { height: 50px; }
-        .main-title-section { background-color: var(--cfe-dark-green); color: var(--bg-white); padding: 50px 40px; position: relative; }
-        .main-title-section h1 { font-size: 2.8em; font-weight: 900; margin: 0; line-height: 1.2; }
-        .main-title-section p { font-size: 1.2em; margin-top: 10px; max-width: 80%; }
-        .curve-top { position: relative; background: var(--cfe-dark-green); height: 100px; border-bottom-left-radius: 50% 40%; border-bottom-right-radius: 50% 40%; margin-top: -50px; z-index: 1; }
-        .content-area { padding: 20px 40px 40px 40px; background-color: var(--bg-white); position: relative; z-index: 2; }
-        .section { margin-bottom: 45px; display: flex; align-items: flex-start; gap: 25px; }
-        .section-icon { font-size: 2.5em; color: var(--cfe-mid-green); background-color: var(--cfe-light-green); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .section-content { width: 100%; }
-        .section-content h2 { font-size: 1.8em; font-weight: 700; color: var(--cfe-dark-green); margin-top: 5px; margin-bottom: 15px; }
-        .custom-list { list-style: none; padding: 0; }
-        .custom-list li { position: relative; padding-left: 35px; margin-bottom: 15px; font-size: 1.05em; }
-        .custom-list li::before { content: '✓'; position: absolute; left: 0; top: 0; color: var(--bg-white); background-color: var(--cfe-mid-green); border-radius: 50%; width: 24px; height: 24px; text-align: center; line-height: 25px; font-weight: bold; }
-        .footer { text-align: center; padding: 30px; background-color: var(--cfe-dark-green); color: var(--cfe-light-green); font-size: 0.9em; }
-        .footer a { color: var(--bg-white); text-decoration: none; font-weight: bold; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="infographic-container">
-        <div class="header"><img src="https://i.imgur.com/v230g0z.png" alt="Logo Gobierno de México"><img src="https://i.imgur.com/V3l3l3h.png" alt="Logo CFE"></div>
-        <div class="main-title-section"><h1>Norma 1: Programa Anual de Capacitación, Adiestramiento y Desarrollo Humano</h1><p>Establece el compromiso para asegurar que el personal reciba la formación necesaria para mejorar su competencia.</p></div>
+        <div class="header">
+            <img src="https://i.imgur.com/v230g0z.png" alt="Logo Gobierno de México">
+            <img src="https://i.imgur.com/V3l3l3h.png" alt="Logo CFE">
+        </div>
+        <div class="main-title-section">
+            <h1>Norma 1: Programa Anual de Capacitación, Adiestramiento y Desarrollo Humano</h1>
+            <p>Establece el compromiso para asegurar que el personal reciba la formación necesaria para mejorar su competencia.</p>
+        </div>
         <div class="curve-top"></div>
         <div class="content-area">
-            <div class="section"><div class="section-icon">🎯</div><div class="section-content"><h2>Objetivo</h2><p>Garantizar que todo el personal reciba la formación necesaria para sus funciones actuales y las del puesto inmediato superior, asegurando un desempeño exitoso y libre de eventos.</p></div></div>
-            <div class="section"><div class="section-icon">📋</div><div class="section-content"><h2>Contenido del Programa Anual</h2><p>El programa anual de capacitación debe ser detallado y preciso, incluyendo los siguientes puntos clave:</p><ul class="custom-list"><li>Temas específicos en los que se requiere capacitar al personal.</li><li>Número de trabajadores a capacitar y número de actividades programadas.</li><li>Duración, modalidad y rama de actividad de cada capacitación.</li><li>Cuantificación de costos y presupuesto asignado.</li><li>Plantilla de instructores internos y/o externos.</li></ul></div></div>
-            <div class="section"><div class="section-icon">⚙️</div><div class="section-content"><h2>Proceso y Aprobación</h2><p>El flujo para la creación y aprobación del programa sigue una estructura definida:</p><ul class="custom-list"><li>Cada trabajador tendrá un programa individual, que se integra al de su centro de trabajo.</li><li>Los programas de los centros de trabajo se consolidan a nivel de Gerencia o área equivalente.</li><li>Finalmente, todos los programas se integran en un **Programa Nacional**.</li><li>Las actividades deben ser aprobadas por la **Comisión Auxiliar Mixta de Capacitación** del área correspondiente.</li></ul></div></div>
+            <div class="section">
+                <div class="section-icon">🎯</div>
+                <div class="section-content">
+                    <h2>Objetivo</h2>
+                    <p>Garantizar que todo el personal reciba la formación necesaria para sus funciones actuales y las del puesto inmediato superior, asegurando un desempeño exitoso y libre de eventos.</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-icon">📋</div>
+                <div class="section-content">
+                    <h2>Contenido del Programa Anual</h2>
+                    <p>El programa anual de capacitación debe ser detallado y preciso, incluyendo los siguientes puntos clave:</p>
+                    <ul class="custom-list">
+                        <li>Temas específicos en los que se requiere capacitar al personal.</li>
+                        <li>Número de trabajadores a capacitar y número de actividades programadas.</li>
+                        <li>Duración, modalidad y rama de actividad de cada capacitación.</li>
+                        <li>Cuantificación de costos y presupuesto asignado.</li>
+                        <li>Plantilla de instructores internos y/o externos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-icon">⚙️</div>
+                <div class="section-content">
+                    <h2>Proceso y Aprobación</h2>
+                    <p>El flujo para la creación y aprobación del programa sigue una estructura definida:</p>
+                    <ul class="custom-list">
+                        <li>Cada trabajador tendrá un programa individual, que se integra al de su centro de trabajo.</li>
+                        <li>Los programas de los centros de trabajo se consolidan a nivel de Gerencia o área equivalente.</li>
+                        <li>Finalmente, todos los programas se integran en un <strong>Programa Nacional</strong>.</li>
+                        <li>Las actividades deben ser aprobadas por la <strong>Comisión Auxiliar Mixta de Capacitación</strong> del área correspondiente.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer"><p><a href="index.html">← Volver al Menú Principal</a></p></div>
+        <div class="footer">
+            <p><a href="index.html">← Volver al Menú Principal</a></p>
+        </div>
     </div>
 </body>
 </html>

@@ -7,59 +7,107 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        :root { --cfe-dark-green: #004d40; --cfe-mid-green: #00796b; --cfe-light-green: #e0f2f1; --cfe-accent-yellow: #ffc107; --bg-light: #f4f7f9; --bg-white: #ffffff; --disabled-bg: #e0e0e0; --disabled-text: #9e9e9e; }
-        body { font-family: 'Montserrat', sans-serif; background-color: var(--bg-light ); margin: 0; }
-        .container { max-width: 1100px; margin: 0 auto; }
-        .header { padding: 25px 40px; display: flex; justify-content: space-between; align-items: center; background-color: var(--bg-white); }
-        .header img { height: 50px; }
-        .main-title-section { background-color: var(--cfe-dark-green); color: var(--bg-white); padding: 60px 40px; text-align: center; }
-        .main-title-section h1 { font-size: 3em; font-weight: 900; margin: 0; }
-        .main-title-section p { font-size: 1.3em; margin-top: 10px; }
-        .menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; padding: 40px; }
-        .norma-card { background-color: var(--bg-white); border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; text-decoration: none; color: #333; display: flex; flex-direction: column; }
-        .norma-card.active:hover { transform: translateY(-8px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
-        .norma-card .card-header { color: var(--bg-white); padding: 20px; }
-        .norma-card .card-header h2 { margin: 0; font-size: 1.5em; }
-        .norma-card .card-body { padding: 20px; flex-grow: 1; }
-        .norma-card .card-body p { margin: 0; }
-        .norma-card.active .card-header { background-color: var(--cfe-mid-green); }
-        .norma-card.disabled { cursor: not-allowed; }
-        .norma-card.disabled:hover { transform: none; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
-        .norma-card.disabled .card-header { background-color: var(--disabled-text); }
-        .norma-card.derogada { cursor: not-allowed; opacity: 0.6; }
-        .norma-card.derogada .card-header { background-color: #757575; }
-        .footer { text-align: center; padding: 30px; background-color: var(--cfe-dark-green); color: var(--cfe-light-green); }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header"><img src="https://i.imgur.com/v230g0z.png" alt="Logo Gobierno de México"><img src="https://i.imgur.com/V3l3l3h.png" alt="Logo CFE"></div>
-    <div class="main-title-section"><h1>Infografías de Normas de Capacitación</h1><p>Un recurso visual para entender los lineamientos clave de la CFE.</p></div>
+    <div class="header">
+        <img src="https://i.imgur.com/v230g0z.png" alt="Logo Gobierno de México">
+        <img src="https://i.imgur.com/V3l3l3h.png" alt="Logo CFE">
+    </div>
+    <div class="main-title-section">
+        <h1>Infografías de Normas de Capacitación</h1>
+        <p>Un recurso visual para entender los lineamientos clave de la CFE.</p>
+    </div>
     <div class="container">
         <div class="menu-grid">
-            <a href="norma-1.html" class="norma-card active"><div class="card-header"><h2>Norma 1</h2></div><div class="card-body"><p>Programa Anual de Capacitación.</p></div></a>
-            <a href="norma-2.html" class="norma-card active"><div class="card-header"><h2>Norma 2</h2></div><div class="card-body"><p>Inscripción a Actividades de Capacitación.</p></div></a>
-            <a href="norma-3.html" class="norma-card active"><div class="card-header"><h2>Norma 3</h2></div><div class="card-body"><p>Acreditación y Obtención de Constancias.</p></div></a>
-            <a href="norma-4.html" class="norma-card active"><div class="card-header"><h2>Norma 4</h2></div><div class="card-body"><p>Determinación del Perfil de Puesto Homologado.</p></div></a>
-            <a href="norma-5.html" class="norma-card active"><div class="card-header"><h2>Norma 5</h2></div><div class="card-body"><p>Capacitación Dentro del Horario de Labores.</p></div></a>
-            <a href="norma-6.html" class="norma-card active"><div class="card-header"><h2>Norma 6</h2></div><div class="card-body"><p>Capacitación Fuera del Horario, Incentivo y Lunch.</p></div></a>
-            <div class="norma-card derogada"><div class="card-header"><h2>Norma 7</h2></div><div class="card-body"><p>Derogada (incluida en Norma 6 ).</p></div></div>
-            <a href="norma-8.html" class="norma-card active"><div class="card-header"><h2>Norma 8</h2></div><div class="card-body"><p>Incentivo a Personas Instructoras Habilitadas.</p></div></a>
-            <div class="norma-card derogada"><div class="card-header"><h2>Norma 9</h2></div><div class="card-body"><p>Derogada (incluida en Norma 6).</p></div></div>
-            <div class="norma-card derogada"><div class="card-header"><h2>Norma 10</h2></div><div class="card-body"><p>Derogada.</p></div></div>
-            <a href="#" class="norma-card disabled"><div class="card-header"><h2>Norma 11</h2></div><div class="card-body"><p>Apoyo a la Titulación Profesional.</p></div></a>
-            <a href="#" class="norma-card disabled"><div class="card-header"><h2>Norma 12</h2></div><div class="card-body"><p>Apoyo para Diplomado y Posgrado.</p></div></a>
-            <a href="#" class="norma-card disabled"><div class="card-header"><h2>Norma 13</h2></div><div class="card-body"><p>Becas para Capacitación en el Extranjero.</p></div></a>
-            <a href="#" class="norma-card disabled"><div class="card-header"><h2>Norma 14</h2></div><div class="card-body"><p>Becas.</p></div></a>
-            <a href="#" class="norma-card disabled"><div class="card-header"><h2>Norma 15</h2></div><div class="card-body"><p>Servicio Social, Prácticas, Residencias.</p></div></a>
-            <a href="#" class="norma-card disabled"><div class="card-header"><h2>Norma 16</h2></div><div class="card-body"><p>Apoyo para Estudios de Licenciatura.</p></div></a>
-            <div class="norma-card derogada"><div class="card-header"><h2>Norma 17</h2></div><div class="card-body"><p>Derogada (incluida en Norma 8).</p></div></div>
-            <a href="#" class="norma-card disabled"><div class="card-header"><h2>Norma 18</h2></div><div class="card-body"><p>Comisiones Mixtas de Capacitación.</p></div></a>
-            <a href="#" class="norma-card disabled"><div class="card-header"><h2>Norma 19</h2></div><div class="card-body"><p>Contratación de Instructoras Externas.</p></div></a>
-            <a href="#" class="norma-card disabled"><div class="card-header"><h2>Norma 20</h2></div><div class="card-body"><p>Certificación de Estudios (Secundaria y Media Superior).</p></div></a>
-            <a href="#" class="norma-card disabled"><div class="card-header"><h2>Norma 21</h2></div><div class="card-body"><p>Incentivo a Personas Adiestradoras Internas.</p></div></a>
+            <a href="norma-1.html" class="norma-card active">
+                <div class="card-header"><h2>Norma 1</h2></div>
+                <div class="card-body"><p>Programa Anual de Capacitación.</p></div>
+            </a>
+            <a href="norma-2.html" class="norma-card active">
+                <div class="card-header"><h2>Norma 2</h2></div>
+                <div class="card-body"><p>Inscripción a Actividades de Capacitación.</p></div>
+            </a>
+            <a href="norma-3.html" class="norma-card active">
+                <div class="card-header"><h2>Norma 3</h2></div>
+                <div class="card-body"><p>Acreditación y Obtención de Constancias.</p></div>
+            </a>
+            <a href="norma-4.html" class="norma-card active">
+                <div class="card-header"><h2>Norma 4</h2></div>
+                <div class="card-body"><p>Determinación del Perfil de Puesto Homologado.</p></div>
+            </a>
+            <a href="norma-5.html" class="norma-card active">
+                <div class="card-header"><h2>Norma 5</h2></div>
+                <div class="card-body"><p>Capacitación Dentro del Horario de Labores.</p></div>
+            </a>
+            <a href="norma-6.html" class="norma-card active">
+                <div class="card-header"><h2>Norma 6</h2></div>
+                <div class="card-body"><p>Capacitación Fuera del Horario, Incentivo y Lunch.</p></div>
+            </a>
+            <div class="norma-card derogada">
+                <div class="card-header"><h2>Norma 7</h2></div>
+                <div class="card-body"><p>Derogada (incluida en Norma 6).</p></div>
+            </div>
+            <a href="norma-8.html" class="norma-card active">
+                <div class="card-header"><h2>Norma 8</h2></div>
+                <div class="card-body"><p>Incentivo a Personas Instructoras Habilitadas.</p></div>
+            </a>
+            <div class="norma-card derogada">
+                <div class="card-header"><h2>Norma 9</h2></div>
+                <div class="card-body"><p>Derogada (incluida en Norma 6).</p></div>
+            </div>
+            <div class="norma-card derogada">
+                <div class="card-header"><h2>Norma 10</h2></div>
+                <div class="card-body"><p>Derogada.</p></div>
+            </div>
+            <a href="#" class="norma-card disabled">
+                <div class="card-header"><h2>Norma 11</h2></div>
+                <div class="card-body"><p>Apoyo a la Titulación Profesional.</p></div>
+            </a>
+            <a href="#" class="norma-card disabled">
+                <div class="card-header"><h2>Norma 12</h2></div>
+                <div class="card-body"><p>Apoyo para Diplomado y Posgrado.</p></div>
+            </a>
+            <a href="#" class="norma-card disabled">
+                <div class="card-header"><h2>Norma 13</h2></div>
+                <div class="card-body"><p>Becas para Capacitación en el Extranjero.</p></div>
+            </a>
+            <a href="#" class="norma-card disabled">
+                <div class="card-header"><h2>Norma 14</h2></div>
+                <div class="card-body"><p>Becas.</p></div>
+            </a>
+            <a href="#" class="norma-card disabled">
+                <div class="card-header"><h2>Norma 15</h2></div>
+                <div class="card-body"><p>Servicio Social, Prácticas, Residencias.</p></div>
+            </a>
+            <a href="#" class="norma-card disabled">
+                <div class="card-header"><h2>Norma 16</h2></div>
+                <div class="card-body"><p>Apoyo para Estudios de Licenciatura.</p></div>
+            </a>
+            <div class="norma-card derogada">
+                <div class="card-header"><h2>Norma 17</h2></div>
+                <div class="card-body"><p>Derogada (incluida en Norma 8).</p></div>
+            </div>
+            <a href="#" class="norma-card disabled">
+                <div class="card-header"><h2>Norma 18</h2></div>
+                <div class="card-body"><p>Comisiones Mixtas de Capacitación.</p></div>
+            </a>
+            <a href="#" class="norma-card disabled">
+                <div class="card-header"><h2>Norma 19</h2></div>
+                <div class="card-body"><p>Contratación de Instructoras Externas.</p></div>
+            </a>
+            <a href="#" class="norma-card disabled">
+                <div class="card-header"><h2>Norma 20</h2></div>
+                <div class="card-body"><p>Certificación de Estudios (Secundaria y Media Superior).</p></div>
+            </a>
+            <a href="#" class="norma-card disabled">
+                <div class="card-header"><h2>Norma 21</h2></div>
+                <div class="card-body"><p>Incentivo a Personas Adiestradoras Internas.</p></div>
+            </a>
         </div>
     </div>
-    <div class="footer"><p>Comisión Federal de Electricidad | Gerencia de Capacitación</p></div>
+    <div class="footer">
+        <p>Comisión Federal de Electricidad | Gerencia de Capacitación</p>
+    </div>
 </body>
 </html>

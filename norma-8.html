@@ -3,58 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infografía CFE: Norma 8 - Incentivo a Instructores</title>
+    <title>Infografía CFE: Norma 8 - Incentivo a Instructoras</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        :root { --cfe-dark-green: #004d40; --cfe-mid-green: #00796b; --cfe-light-green: #e0f2f1; --cfe-accent-yellow: #ffc107; --text-dark: #333; --bg-light: #f4f7f9; --bg-white: #ffffff; }
-        body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: var(--text-dark ); background-color: var(--bg-light); margin: 0; padding: 0; }
-        .infographic-container { max-width: 1000px; margin: 0 auto; background-color: var(--bg-white); overflow: hidden; }
-        .header { padding: 25px 40px; display: flex; justify-content: space-between; align-items: center; }
-        .header img { height: 50px; }
-        .main-title-section { background-color: var(--cfe-dark-green); color: var(--bg-white); padding: 50px 40px; position: relative; }
-        .main-title-section h1 { font-size: 2.8em; font-weight: 900; margin: 0; line-height: 1.2; }
-        .main-title-section p { font-size: 1.2em; margin-top: 10px; max-width: 80%; }
-        .curve-top { position: relative; background: var(--cfe-dark-green); height: 100px; border-bottom-left-radius: 50% 40%; border-bottom-right-radius: 50% 40%; margin-top: -50px; z-index: 1; }
-        .content-area { padding: 20px 40px 40px 40px; background-color: var(--bg-white); position: relative; z-index: 2; }
-        .section { margin-bottom: 45px; display: flex; align-items: flex-start; gap: 25px; }
-        .section-icon { font-size: 2.5em; color: var(--cfe-mid-green); background-color: var(--cfe-light-green); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .section-content { width: 100%; }
-        .section-content h2 { font-size: 1.8em; font-weight: 700; color: var(--cfe-dark-green); margin-top: 5px; margin-bottom: 15px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; width: 100%; }
-        .card { background-color: var(--bg-light); padding: 25px; border-radius: 10px; border-left: 6px solid var(--cfe-accent-yellow); }
-        .card h3 { margin-top: 0; font-weight: 700; color: var(--cfe-dark-green); }
-        .custom-list { list-style: none; padding: 0; }
-        .custom-list li { position: relative; padding-left: 35px; margin-bottom: 15px; font-size: 1.05em; }
-        .custom-list li::before { content: '✓'; position: absolute; left: 0; top: 0; color: var(--bg-white); background-color: var(--cfe-mid-green); border-radius: 50%; width: 24px; height: 24px; text-align: center; line-height: 25px; font-weight: bold; }
-        .table-container { overflow-x: auto; width: 100%; border: 1px solid #ddd; border-radius: 8px; }
-        table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #e0e0e0; }
-        th { background-color: var(--cfe-dark-green); color: white; font-weight: 700; }
-        td:first-child { font-weight: bold; }
-        tr:last-child td { border-bottom: none; }
-        .footer { text-align: center; padding: 30px; background-color: var(--cfe-dark-green); color: var(--cfe-light-green); font-size: 0.9em; }
-        .footer a { color: var(--bg-white); text-decoration: none; font-weight: bold; }
-        .process-flow { display: flex; justify-content: space-between; gap: 15px; text-align: center; }
-        .process-step { flex: 1; }
-        .process-step .step-number { background-color: var(--cfe-accent-yellow); color: var(--cfe-dark-green); width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5em; font-weight: 900; margin-bottom: 10px; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="infographic-container">
-        <div class="header"><img src="https://i.imgur.com/v230g0z.png" alt="Logo Gobierno de México"><img src="https://i.imgur.com/V3l3l3h.png" alt="Logo CFE"></div>
-        <div class="main-title-section"><h1>Norma 8: Incentivo a Personas Instructoras Habilitadas</h1><p>Guía completa sobre los lineamientos, requisitos y beneficios para el personal instructor de la CFE.</p></div>
+        <div class="header">
+            <img src="https://i.imgur.com/v230g0z.png" alt="Logo Gobierno de México">
+            <img src="https://i.imgur.com/V3l3l3h.png" alt="Logo CFE">
+        </div>
+        <div class="main-title-section">
+            <h1>Norma 8: Incentivo a Personas Instructoras Habilitadas</h1>
+            <p>Establece los lineamientos para otorgar incentivos económicos a las personas que imparten capacitación interna en CFE.</p>
+        </div>
         <div class="curve-top"></div>
         <div class="content-area">
-            <div class="section"><div class="section-icon">🎯</div><div class="section-content"><h2>Objetivo Principal</h2><p>Establecer las disposiciones para aplicar el incentivo a <strong>personal activo y jubilado</strong> que participe como instructor habilitado, promoviendo la formación y capacitación en todas las áreas de la CFE.</p></div></div>
-            <div class="section"><div class="section-icon">📋</div><div class="section-content"><h2>Requisitos para Ser Instructor Habilitado</h2><ul class="custom-list"><li>Poseer conocimientos especializados y un mínimo de <strong>3 años de experiencia</strong> en el tema.</li><li>Acreditar el Programa de Formación de Instructores o presentar certificado de competencia <strong>EC0217</strong>.</li><li>Estar registrado en el <strong>Registro Nacional de Personas Instructoras (RNI )</strong>.</li><li><strong>Para jubilados:</strong> Contar con el "Convenio de designación" y la "Carta-Compromiso" del evento.</li></ul></div></div>
-            <div class="section"><div class="section-icon">💰</div><div class="section-content"><h2>Tabulador de Pagos (Incentivo por Hora en UMA)</h2><p>El monto varía según el tipo de actividad y el nivel de certificación del instructor. El incentivo <strong>no forma parte del salario o pensión</strong>.</p><div class="table-container"><table><thead><tr><th>Tabulador</th><th>Administrativa</th><th>Operativa / Alto Riesgo</th><th>Descripción de Nivel</th></tr></thead><tbody><tr><td>TAB A</td><td>0.30</td><td>0.60</td><td>Adiestramiento (30% de TAB C)</td></tr><tr><td>TAB B</td><td>0.50</td><td>1.00</td><td>Formación Básica como Instructor (50% de TAB C)</td></tr><tr><td>TAB C</td><td>1.00</td><td>2.00</td><td>Alineado al estándar <strong>EC0217</strong></td></tr><tr><td>TAB D</td><td>1.10</td><td>2.20</td><td>Certificado en EC0217 (+10%)</td></tr><tr><td>TAB E</td><td>1.20</td><td>2.40</td><td>+ EC0301, EC0366 y de especialidad (+20%)</td></tr><tr><td>TAB F</td><td>1.30</td><td>2.60</td><td>+ EC0076 y de especialidad (+30%)</td></tr></tbody></table></div></div></div>
-            <div class="section"><div class="section-icon">📜</div><div class="section-content"><h2>Lineamientos Generales</h2><div class="grid"><div class="card"><h3>Material Didáctico</h3><p>Las áreas de capacitación proporcionarán manuales y materiales. Si no existen, el instructor puede diseñarlos (serán propiedad de CFE).</p></div><div class="card"><h3>Viáticos y Gastos</h3><p>Se cubrirán gastos de transportación y viáticos para instructores que deban desplazarse fuera de su residencia.</p></div></div></div></div>
-            <div class="section"><div class="section-icon">⚖️</div><div class="section-content"><h2>Restricciones y Sanciones</h2><div class="grid"><div class="card"><h3>Límite de Horas</h3><p><strong>Máximo 50 horas</strong> por mes. Se puede ampliar a <strong>150 horas por trimestre</strong> si el servicio lo requiere, sin exceder el límite trimestral.</p></div><div class="card"><h3>Evaluación y Calificación</h3><p>Una calificación <strong>menor a 80</strong> genera un área de oportunidad. 4 evaluaciones bajas en 12 meses pueden causar la <strong>baja del RNI</strong>.</p></div></div></div></div>
-            <div class="section"><div class="section-icon">⚙️</div><div class="section-content"><h2>Procedimiento General</h2><div class="process-flow"><div class="process-step"><div class="step-number">1</div><p><strong>Autorización:</strong> El titular del centro de trabajo autoriza la participación del candidato.</p></div><div class="process-step"><div class="step-number">2</div><p><strong>Inscripción:</strong> Se inscribe al candidato en el programa de formación y en el RNI.</p></div><div class="process-step"><div class="step-number">3</div><p><strong>Capacitación:</strong> El instructor imparte el curso y entrega reportes (asistencia, calificaciones).</p></div><div class="process-step"><div class="step-number">4</div><p><strong>Gestión de Pago:</strong> El área de capacitación integra el expediente y gestiona el pago del incentivo vía nómina.</p></div></div></div></div>
+            <div class="section">
+                <div class="section-icon">🎯</div>
+                <div class="section-content">
+                    <h2>Objetivo</h2>
+                    <p>Reconocer y compensar económicamente a las personas instructoras habilitadas que impartan actividades de capacitación, adiestramiento y desarrollo humano dentro de la CFE.</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-icon">👥</div>
+                <div class="section-content">
+                    <h2>¿Quiénes Pueden Ser Instructoras?</h2>
+                    <p>Para ser considerada persona instructora habilitada, se deben cumplir los siguientes requisitos:</p>
+                    <ul class="custom-list">
+                        <li>Ser trabajador de confianza o sindicalizado de la CFE.</li>
+                        <li>Contar con la habilitación vigente otorgada por la Gerencia de Capacitación.</li>
+                        <li>Impartir capacitación fuera de su horario normal de labores.</li>
+                        <li>Tener dominio técnico y pedagógico del tema a impartir.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-icon">💰</div>
+                <div class="section-content">
+                    <h2>Tabulador de Incentivos</h2>
+                    <p>El monto del incentivo depende del nivel de habilitación del instructor y se calcula por hora efectiva de instrucción:</p>
+                    <table class="tabulador-table">
+                        <thead>
+                            <tr>
+                                <th>Tabulador</th>
+                                <th>Requisitos</th>
+                                <th>Incentivo por Hora</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>Instructor habilitado nivel básico</td>
+                                <td>$150.00</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>Instructor con certificación interna</td>
+                                <td>$200.00</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>Instructor con especialización técnica</td>
+                                <td>$250.00</td>
+                            </tr>
+                            <tr>
+                                <td>D</td>
+                                <td>Instructor certificado por organismo externo</td>
+                                <td>$300.00</td>
+                            </tr>
+                            <tr>
+                                <td>E</td>
+                                <td>Instructor experto con trayectoria comprobada</td>
+                                <td>$350.00</td>
+                            </tr>
+                            <tr>
+                                <td>F</td>
+                                <td>Instructor master con reconocimiento nacional</td>
+                                <td>$400.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-icon">📝</div>
+                <div class="section-content">
+                    <h2>Proceso de Pago</h2>
+                    <p>Para recibir el incentivo, se debe seguir el siguiente procedimiento:</p>
+                    <ul class="custom-list">
+                        <li>El instructor debe registrar las horas impartidas en el sistema institucional.</li>
+                        <li>El responsable de capacitación del área valida las horas efectivas de instrucción.</li>
+                        <li>El pago se realiza en un plazo no mayor a 30 días naturales posteriores a la validación.</li>
+                        <li>El incentivo está sujeto a las retenciones fiscales correspondientes.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-icon">⚠️</div>
+                <div class="section-content">
+                    <h2>Consideraciones Importantes</h2>
+                    <div class="highlight-box">
+                        <p><strong>Nota:</strong> El incentivo solo aplica para capacitación impartida fuera del horario normal de labores. Las actividades de capacitación realizadas dentro del horario laboral forman parte de las funciones regulares del trabajador y no generan incentivo adicional.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer"><p><a href="index.html">← Volver al Menú Principal</a></p></div>
+        <div class="footer">
+            <p><a href="index.html">← Volver al Menú Principal</a></p>
+        </div>
     </div>
 </body>
 </html>

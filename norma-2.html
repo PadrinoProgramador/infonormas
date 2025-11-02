@@ -7,39 +7,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        :root { --cfe-dark-green: #004d40; --cfe-mid-green: #00796b; --cfe-light-green: #e0f2f1; --cfe-accent-yellow: #ffc107; --text-dark: #333; --bg-light: #f4f7f9; --bg-white: #ffffff; }
-        body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: var(--text-dark ); background-color: var(--bg-light); margin: 0; padding: 0; }
-        .infographic-container { max-width: 1000px; margin: 0 auto; background-color: var(--bg-white); overflow: hidden; }
-        .header { padding: 25px 40px; display: flex; justify-content: space-between; align-items: center; }
-        .header img { height: 50px; }
-        .main-title-section { background-color: var(--cfe-dark-green); color: var(--bg-white); padding: 50px 40px; position: relative; }
-        .main-title-section h1 { font-size: 2.8em; font-weight: 900; margin: 0; line-height: 1.2; }
-        .main-title-section p { font-size: 1.2em; margin-top: 10px; max-width: 80%; }
-        .curve-top { position: relative; background: var(--cfe-dark-green); height: 100px; border-bottom-left-radius: 50% 40%; border-bottom-right-radius: 50% 40%; margin-top: -50px; z-index: 1; }
-        .content-area { padding: 20px 40px 40px 40px; background-color: var(--bg-white); position: relative; z-index: 2; }
-        .section { margin-bottom: 45px; display: flex; align-items: flex-start; gap: 25px; }
-        .section-icon { font-size: 2.5em; color: var(--cfe-mid-green); background-color: var(--cfe-light-green); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .section-content { width: 100%; }
-        .section-content h2 { font-size: 1.8em; font-weight: 700; color: var(--cfe-dark-green); margin-top: 5px; margin-bottom: 15px; }
-        .custom-list { list-style: none; padding: 0; }
-        .custom-list li { position: relative; padding-left: 35px; margin-bottom: 15px; font-size: 1.05em; }
-        .custom-list li::before { content: '✓'; position: absolute; left: 0; top: 0; color: var(--bg-white); background-color: var(--cfe-mid-green); border-radius: 50%; width: 24px; height: 24px; text-align: center; line-height: 25px; font-weight: bold; }
-        .footer { text-align: center; padding: 30px; background-color: var(--cfe-dark-green); color: var(--cfe-light-green); font-size: 0.9em; }
-        .footer a { color: var(--bg-white); text-decoration: none; font-weight: bold; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="infographic-container">
-        <div class="header"><img src="https://i.imgur.com/v230g0z.png" alt="Logo Gobierno de México"><img src="https://i.imgur.com/V3l3l3h.png" alt="Logo CFE"></div>
-        <div class="main-title-section"><h1>Norma 2: Inscripción a Actividades de Capacitación</h1><p>Define el proceso para la inscripción del personal a eventos de capacitación en Centros Nacionales o Especializados.</p></div>
+        <div class="header">
+            <img src="https://i.imgur.com/v230g0z.png" alt="Logo Gobierno de México">
+            <img src="https://i.imgur.com/V3l3l3h.png" alt="Logo CFE">
+        </div>
+        <div class="main-title-section">
+            <h1>Norma 2: Inscripción a Actividades de Capacitación</h1>
+            <p>Define el proceso para la inscripción del personal a eventos de capacitación en Centros Nacionales o Especializados.</p>
+        </div>
         <div class="curve-top"></div>
         <div class="content-area">
-            <div class="section"><div class="section-icon">🎯</div><div class="section-content"><h2>Objetivo</h2><p>Asegurar la inscripción del personal a las actividades de capacitación para que reciban la formación necesaria, mejoren su competencia y se garantice un desempeño exitoso.</p></div></div>
-            <div class="section"><div class="section-icon">📝</div><div class="section-content"><h2>Proceso de Inscripción</h2><p>La inscripción debe seguir un procedimiento formal para garantizar el orden y la correcta asignación de recursos.</p><ul class="custom-list"><li>Toda inscripción debe responder a requerimientos de las baterías de capacitación o a necesidades específicas del área.</li><li>La solicitud se tramita a través del **representante de capacitación** del centro de trabajo.</li><li>No se aceptan reservaciones de lugares; el proceso se basa en la disponibilidad de cupo.</li><li>En caso de no haber cupo o cancelación, el Centro de Capacitación enviará un aviso por escrito.</li></ul></div></div>
-            <div class="section"><div class="section-icon">⚙️</div><div class="section-content"><h2>Confirmación y Cancelación</h2><p>La gestión de los participantes es clave para el éxito de la capacitación.</p><ul class="custom-list"><li>El representante de capacitación confirmará la inscripción realizada.</li><li>Para cursos en Centros Nacionales, el participante deberá portar su gafete para el acceso.</li><li>Cancelaciones o cambios de participantes deben notificarse con al menos **tres días hábiles de anticipación**.</li><li>El Centro de Capacitación pondrá a disposición el reporte de asistencia y calificaciones en un término no mayor a **5 días**.</li></ul></div></div>
+            <div class="section">
+                <div class="section-icon">🎯</div>
+                <div class="section-content">
+                    <h2>Objetivo</h2>
+                    <p>Asegurar la inscripción del personal a las actividades de capacitación para que reciban la formación necesaria, mejoren su competencia y se garantice un desempeño exitoso.</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-icon">📝</div>
+                <div class="section-content">
+                    <h2>Proceso de Inscripción</h2>
+                    <p>La inscripción debe seguir un procedimiento formal para garantizar el orden y la correcta asignación de recursos.</p>
+                    <ul class="custom-list">
+                        <li>Toda inscripción debe responder a requerimientos de las baterías de capacitación o a necesidades específicas del área.</li>
+                        <li>La solicitud se tramita a través del <strong>representante de capacitación</strong> del centro de trabajo.</li>
+                        <li>No se aceptan reservaciones de lugares; el proceso se basa en la disponibilidad de cupo.</li>
+                        <li>En caso de no haber cupo o cancelación, el Centro de Capacitación enviará un aviso por escrito.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-icon">⚙️</div>
+                <div class="section-content">
+                    <h2>Confirmación y Cancelación</h2>
+                    <p>La gestión de los participantes es clave para el éxito de la capacitación.</p>
+                    <ul class="custom-list">
+                        <li>El representante de capacitación confirmará la inscripción realizada.</li>
+                        <li>Para cursos en Centros Nacionales, el participante deberá portar su gafete para el acceso.</li>
+                        <li>Cancelaciones o cambios de participantes deben notificarse con al menos <strong>tres días hábiles de anticipación</strong>.</li>
+                        <li>El Centro de Capacitación pondrá a disposición el reporte de asistencia y calificaciones en un término no mayor a <strong>5 días</strong>.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer"><p><a href="index.html">← Volver al Menú Principal</a></p></div>
+        <div class="footer">
+            <p><a href="index.html">← Volver al Menú Principal</a></p>
+        </div>
     </div>
 </body>
 </html>

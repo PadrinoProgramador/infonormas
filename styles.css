@@ -1,0 +1,382 @@
+/* ========================================
+   CFE - Infografías de Normas de Capacitación
+   Archivo de estilos centralizado
+   ======================================== */
+
+/* Variables CSS */
+:root {
+    --cfe-dark-green: #004d40;
+    --cfe-mid-green: #00796b;
+    --cfe-light-green: #e0f2f1;
+    --cfe-accent-yellow: #ffc107;
+    --cfe-accent-gold: #d4af37;
+    --text-dark: #333;
+    --bg-light: #f4f7f9;
+    --bg-white: #ffffff;
+    --disabled-bg: #e0e0e0;
+    --disabled-text: #9e9e9e;
+}
+
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+/* ========================================
+   ESTILOS PARA EL MENÚ PRINCIPAL (index.html)
+   ======================================== */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-white);
+}
+
+.header img {
+    height: 50px;
+}
+
+.main-title-section {
+    background-color: var(--cfe-dark-green);
+    color: var(--bg-white);
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.main-title-section h1 {
+    font-size: 3em;
+    font-weight: 900;
+    margin: 0;
+}
+
+.main-title-section p {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.norma-card {
+    background-color: var(--bg-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.norma-card.active:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.norma-card .card-header {
+    color: var(--bg-white);
+    padding: 20px;
+}
+
+.norma-card .card-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.norma-card .card-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.norma-card .card-body p {
+    margin: 0;
+}
+
+.norma-card.active .card-header {
+    background-color: var(--cfe-mid-green);
+}
+
+.norma-card.disabled {
+    cursor: not-allowed;
+}
+
+.norma-card.disabled:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.norma-card.disabled .card-header {
+    background-color: var(--disabled-text);
+}
+
+.norma-card.derogada {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.norma-card.derogada .card-header {
+    background-color: #757575;
+}
+
+/* ========================================
+   ESTILOS PARA LAS INFOGRAFÍAS (norma-X.html)
+   ======================================== */
+
+.infographic-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+    overflow: hidden;
+}
+
+.infographic-container .header {
+    background-color: transparent;
+}
+
+.infographic-container .main-title-section {
+    padding: 50px 40px;
+    text-align: left;
+    position: relative;
+}
+
+.infographic-container .main-title-section h1 {
+    font-size: 2.8em;
+    line-height: 1.2;
+}
+
+.infographic-container .main-title-section p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    max-width: 80%;
+}
+
+.curve-top {
+    position: relative;
+    background: var(--cfe-dark-green);
+    height: 100px;
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.content-area {
+    padding: 20px 40px 40px 40px;
+    background-color: var(--bg-white);
+    position: relative;
+    z-index: 2;
+}
+
+.section {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.section-icon {
+    font-size: 2.5em;
+    color: var(--cfe-mid-green);
+    background-color: var(--cfe-light-green);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.section-content {
+    width: 100%;
+}
+
+.section-content h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--cfe-dark-green);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.section-content p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+.custom-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--bg-white);
+    background-color: var(--cfe-mid-green);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+/* Tabla de tabuladores (para Norma 8) */
+.tabulador-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabulador-table th,
+.tabulador-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--cfe-light-green);
+}
+
+.tabulador-table th {
+    background-color: var(--cfe-mid-green);
+    color: var(--bg-white);
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.tabulador-table tr:hover {
+    background-color: var(--cfe-light-green);
+}
+
+.tabulador-table td:first-child {
+    font-weight: 700;
+    color: var(--cfe-dark-green);
+}
+
+/* Cajas de destacado */
+.highlight-box {
+    background-color: var(--cfe-light-green);
+    border-left: 5px solid var(--cfe-mid-green);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.highlight-box strong {
+    color: var(--cfe-dark-green);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--cfe-dark-green);
+    color: var(--cfe-light-green);
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: var(--bg-white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--cfe-accent-yellow);
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-title-section h1 {
+        font-size: 2em;
+    }
+
+    .main-title-section p {
+        font-size: 1em;
+    }
+
+    .infographic-container .main-title-section h1 {
+        font-size: 2em;
+    }
+
+    .infographic-container .main-title-section p {
+        font-size: 1em;
+        max-width: 100%;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 2em;
+    }
+
+    .section-content h2 {
+        font-size: 1.5em;
+    }
+
+    .content-area {
+        padding: 20px;
+    }
+
+    .tabulador-table {
+        font-size: 0.9em;
+    }
+
+    .tabulador-table th,
+    .tabulador-table td {
+        padding: 10px;
+    }
+}
